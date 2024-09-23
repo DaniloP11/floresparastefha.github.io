@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart">♥</span>
+      <p class="paper" id="mainMessage">
+        ¡Hola Mi Amor! 🎉❤️ <br>
+        No tuve dinero para tus flores Amarillas,<br>
+        pero te hice unas flores con mucho cariño.
+      </p>
+      <div class="letter"></div>
+    </div>
+    <div class="options">
+      <button id="open" style="background-color: #f506e9; border: none; color: white; padding: 15px 30px; text-align: center; font-size: 16px; margin: 5px; cursor: pointer; border-radius: 25px; transition: background-color 0.3s, transform 0.2s;" 
+              onmouseover="this.style.backgroundColor='#f506e9'; this.style.transform='scale(1.05)';" 
+              onmouseout="this.style.backgroundColor='#f506e9'; this.style.transform='scale(1)';">Abrir</button>
+      
+      <button id="close" style="background-color: #f506e9; border: none; color: white; padding: 15px 30px; text-align: center; font-size: 16px; margin: 5px; cursor: pointer; border-radius: 25px; transition: background-color 0.3s, transform 0.2s;" 
+              onmouseover="this.style.backgroundColor='#f506e9'; this.style.transform='scale(1.05)';" 
+              onmouseout="this.style.backgroundColor='#f506e9'; this.style.transform='scale(1)';">Cerrar</button>
+    </div>
+    
+    <div class="options">
+      <button id="siguiente" style="background-color: #f506e9; border: none; color: white; padding: 15px 30px; text-align: center; font-size: 16px; margin: 5px; cursor: pointer; border-radius: 25px; transition: background-color 0.3s, transform 0.2s;" 
+              onmouseover="this.style.backgroundColor='#f506e9'; this.style.transform='scale(1.05)';" 
+              onmouseout="this.style.backgroundColor='#f506e9'; this.style.transform='scale(1)';">Mira tu detalle</button>
+    </div>
+    
+    
+
+  </main>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('siguiente').addEventListener('click', function() {
+        window.location.href = "flower.html"; // Redirigir a index.html dentro de la carpeta casar
+    });
+  </script>
+
+</body>
+</html>
